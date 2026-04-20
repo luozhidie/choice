@@ -17,7 +17,6 @@ export default function ContactPage() {
     setLoading(true)  
   
     try {  
-      // 保存到 Supabase  
       const { error } = await supabase  
         .from('contacts')  
         .insert([  
